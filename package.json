@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "dev": "parcel src/index.pug",
+    "dev": "parcel src/registration.pug",
     "build": "parcel build src/*"
   },
   "keywords": [],
