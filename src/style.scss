@@ -1,0 +1,71 @@
+
+.auth-content{
+  font-family: 'Inter', serif;
+  font-style: normal;
+  font-weight: 500;
+  min-height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .login_form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 340px;
+    height: 450px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.14);
+    border-radius: 12px;
+    padding: 3%;
+
+    .title {
+      margin-top: 10%;
+      width: 50px;
+      height: 20px;
+      font-size: 20px;
+      line-height: 20px;
+      color: #1E1E1E;
+    }
+    .inputs{
+      margin-bottom: 30%;
+      min-width:100%;
+      font-size: 9px;
+      line-height: 9px;
+      color: #999999;
+      input {
+        border: none;
+        width: 100%;
+        outline: none;
+        border-bottom: 2px solid #3369F3;
+      }
+    }
+
+    .buttons{
+      min-width:100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .authorize{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width:100%;
+        background: #3369F3;
+        border-radius: 8px;
+        border: none;
+        font-size: 13px;
+        line-height: 13px;
+        color: #FFFFFF;
+      }
+      .register{
+        margin-top: 10px;
+        font-size: 11px;
+        color: #3369F3;
+      }
+    }
+  }
+}
+

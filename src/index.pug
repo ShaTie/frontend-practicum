@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+    head
+        link(rel="stylesheet", href="style.scss")
+    div.auth-content
+        form.login_form(role='form' method='GET' action='https://www.google.com/')
+
+            div.title
+                p.title.
+                    Вход
+
+            div.inputs
+                p.
+                    Логин
+                input.login#login.form-control(type='text', name='login')
+                div.line
+                p.
+                    Пароль
+                input.pass#password.form-control(type='password', name='password')
+                div.line
+            div.buttons
+                button.authorize(type="submit")
+                    p.
+                        Авторизоваться
+                a.register.
+                    Нет аккаунта?
