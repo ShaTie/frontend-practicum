@@ -151,6 +151,7 @@
     font-family: 'Inter', serif;
     font-style: normal;
     font-weight: 500;
+    margin: 0;
   }
 
   .messages-bar{
@@ -223,9 +224,11 @@
         display: flex;
         min-height: 70px;
         width: 100%;
-        padding: 1vw;
+        padding: 12px 10px;
 
         .messages-bar-chat-avatar{
+          //width: 48px;
+          //height: 48px;
           flex: 2;
           display: flex;
           align-items: center;
@@ -233,8 +236,9 @@
           margin-right: 4%;
 
           img{
-            width: 100%;
-            object-fit: cover;
+            width: 48px;
+            height: 48px;
+            //object-fit: cover;
             border-radius: 50%;
           }
         }
@@ -277,22 +281,26 @@
             color: #999999;
           }
 
-          .messages-bar-chat-notification {
+          .messages-bar-chat-notifications-area{
             display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-left: 6px;
-            border-radius: 50%;
-            width: 20px;
-            height: 20px;
-            position: relative; /* If you want text inside of it */
-            background: #3369F3;
+            justify-content: flex-end;
+            .messages-bar-chat-notification {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-left: 6px;
+              border-radius: 50%;
+              width: 20px;
+              height: 20px;
+              position: relative; /* If you want text inside of it */
+              background: #3369F3;
 
-            .messages-bar-chat-notification-count {
-              font-size: 11px;
-              line-height: 12px;
-              text-align: center;
-              color: #FFFFFF;
+              .messages-bar-chat-notification-count {
+                font-size: 11px;
+                line-height: 12px;
+                text-align: center;
+                color: #FFFFFF;
+              }
             }
           }
         }
@@ -308,7 +316,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 3.5;
+    flex: 5;
     max-height: 100vh;
     width: 100%;
     overflow: auto;
