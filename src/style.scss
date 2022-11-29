@@ -1,9 +1,10 @@
+@import "clear";
 
-.auth_content{
+.auth_content {
   font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 500;
-  min-height:100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +18,7 @@
     height: 450px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.14);
     border-radius: 12px;
-    padding: 3%;
+    padding: 10px;
 
     .title {
       margin-top: 10%;
@@ -25,12 +26,14 @@
       line-height: 20px;
       color: #1E1E1E;
     }
-    .inputs{
+
+    .inputs {
       margin-bottom: 30%;
-      min-width:100%;
+      min-width: 100%;
       font-size: 9px;
       line-height: 9px;
       color: #999999;
+
       input {
         border: none;
         width: 100%;
@@ -39,18 +42,18 @@
       }
     }
 
-    .buttons{
-      min-width:100%;
+    .buttons {
+      min-width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
 
-      .authorize{
+      .authorize {
         display: flex;
         justify-content: center;
         align-items: center;
-        min-width:100%;
+        min-width: 100%;
         background: #3369F3;
         border-radius: 8px;
         border: none;
@@ -58,7 +61,8 @@
         line-height: 13px;
         color: #FFFFFF;
       }
-      .register{
+
+      .register {
         margin-top: 10px;
         font-size: 11px;
         color: #3369F3;
@@ -67,11 +71,11 @@
   }
 }
 
-.registration_content{
+.registration_content {
   font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 500;
-  min-height:100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,12 +97,14 @@
       line-height: 20px;
       color: #1E1E1E;
     }
-    .inputs{
+
+    .inputs {
       margin-bottom: 30%;
-      min-width:100%;
+      min-width: 100%;
       font-size: 9px;
       line-height: 9px;
       color: #999999;
+
       input {
         border: none;
         width: 100%;
@@ -107,18 +113,18 @@
       }
     }
 
-    .buttons{
-      min-width:100%;
+    .buttons {
+      min-width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
 
-      .authorize{
+      .authorize {
         display: flex;
         justify-content: center;
         align-items: center;
-        min-width:100%;
+        min-width: 100%;
         background: #3369F3;
         border-radius: 8px;
         border: none;
@@ -126,11 +132,191 @@
         line-height: 13px;
         color: #FFFFFF;
       }
-      .auth{
+
+      .auth {
         margin-top: 10px;
         font-size: 11px;
         color: #3369F3;
       }
+    }
+  }
+}
+
+.messenger_content{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+
+  p, input{
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .messages-bar{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: #FBFBFB;
+    border-right: 1px solid #EAEAEA;
+
+    .messages-bar-header{
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+
+      .messages-bar-profile-zone{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        min-width: 90%;
+
+        .messages-bar-header-profile{
+          flex: 1;
+        }
+
+        .messages-bar-header-title {
+          font-size: 12px;
+          line-height: 12px;
+          text-align: right;
+          color: #999999;
+        }
+      }
+
+      .messages-bar-header-search{
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
+        input{
+          width: 90%;
+          background: #EFEFEF;
+          border-radius: 5px;
+          padding: 4px 14px;
+        }
+        input::placeholder{
+          text-align: center;
+          font-size: 12px;
+          line-height: 12px;
+          color: #999999;
+        }
+      }
+    }
+    .messages-bar-content{
+      flex: 8;
+      align-self: start;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+      width: 100%;
+      overflow: auto;
+      position: sticky;
+
+      .line-between-chats{
+        width: 90%;
+        border-top: solid 1px #EAEAEA;
+      }
+
+      .messages-bar-chat{
+        display: flex;
+        min-height: 70px;
+        width: 100%;
+        padding: 1vw;
+
+        .messages-bar-chat-avatar{
+          flex: 2;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 4%;
+
+          img{
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+          }
+        }
+
+        .messages-bar-chat-content{
+          flex: 8;
+
+          .messages-bar-chat-name{
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 13px;
+            color: #1E1E1E;
+          }
+
+          .messages-bar-chat-message{
+            line-height: 15px;
+            font-size: 12px;
+            color: #999999;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -moz-box;
+            -moz-box-orient: vertical;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+          }
+        }
+
+        .messages-bar-chat-info{
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          position: relative;
+
+          .messages-bar-chat-time{
+            font-size: 9px;
+            line-height: 13px;
+            text-align: right;
+            color: #999999;
+          }
+
+          .messages-bar-chat-notification {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 6px;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            position: relative; /* If you want text inside of it */
+            background: #3369F3;
+
+            .messages-bar-chat-notification-count {
+              font-size: 11px;
+              line-height: 12px;
+              text-align: center;
+              color: #FFFFFF;
+            }
+          }
+        }
+      }
+    }
+
+    .messages-bar-chat:hover{
+      background: #E4EDFD;
+    }
+  }
+
+  .messenger-main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 3.5;
+    max-height: 100vh;
+    width: 100%;
+    overflow: auto;
+
+    .messenger-main-content-select-chat-message{
+      font-size: 12px;
+      line-height: 12px;
+      color: #999999;
     }
   }
 }

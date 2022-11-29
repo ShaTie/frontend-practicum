@@ -1,0 +1,30 @@
+
+- var n = 0;
+
+doctype html
+html(lang="en")
+    head
+        link(rel="stylesheet", href="style.scss")
+    div.messenger_content
+
+        div.messages-bar
+
+            div.messages-bar-header
+
+                div.messages-bar-profile-zone
+                    div.messages-bar-header-profile
+                    p.messages-bar-header-title.
+                        Профиль >
+
+                div.messages-bar-header-search
+                    input.messages-bar-header-search-input(placeholder="Поиск")
+
+            ul.messages-bar-content
+                each _ in Array(50)
+                    include includes/chat.pug
+
+
+
+        div.messenger-main-content
+            p.messenger-main-content-select-chat-message.
+                Выберите чат чтобы отправить сообщение
