@@ -736,3 +736,39 @@
   }
 
 }
+
+.error-root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .error-root-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+
+    .error-code{
+      font-size: 40px;
+      line-height: 40px;
+      color: #1E1E1E;
+      margin: 20px 0;
+    }
+
+    .error-text{
+      font-size: 20px;
+      line-height: 20px;
+      color: #1E1E1E;
+    }
+  }
+
+
+  .error-back-to-chats{
+    cursor: pointer;
+    font-size: 11px;
+    line-height: 11px;
+    color: #3369F3;
+    margin-top: 70px;
+  }
+}
