@@ -1,0 +1,40 @@
+doctype html
+
+html(lang="en")
+    head
+        link(rel="stylesheet", href="style.scss")
+
+    div.messenger_content
+
+        include includes/messages-bar
+
+        div.messenger-main-content-chat
+
+            div.messenger-main-content-chat-head
+
+                div.messenger-main-content-chat-head-avatar
+                    img(src='../static/avatar.jpg' alt='avatar')
+
+                div.messenger-main-content-chat-head-name
+                    p.messenger-main-content-chat-head-name.
+                        Vasiliy
+
+                div.messenger-main-content-chat-head-menu
+                    img(src='../static/icons/menu.svg' alt='menu-icon')
+
+
+            ul.messenger-main-content-chat-content
+                each _ in Array(5)
+                    include includes/opponent-message
+                    include includes/user-message
+
+            div.messenger-main-content-chat-input
+                div.messenger-main-content-chat-input-clip
+                    img(src='../static/icons/clip.svg' alt='clip-icon')
+                //div.messenger-main-content-chat-input-container
+                div.messenger-main-content-chat-input-grow-wrap
+                    input.messenger-main-content-chat-input-text(onInput="this.parentNode.dataset.replicatedValue = this.value")
+
+                div.messenger-main-content-chat-input-send
+                    img(src='../static/icons/send_message_arrow_pointer.svg' alt='send-message-icon')
+
