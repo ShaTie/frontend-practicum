@@ -2,6 +2,7 @@ doctype html
 html(lang="en")
     head
         link(rel="stylesheet", href="styles/style.scss")
+
     div.auth_content
         form.login_form(role='form' method='POST' action='https://www.google.ru/')
 
@@ -21,5 +22,5 @@ html(lang="en")
                 button.authorize(type="submit")
                     p.
                         Авторизоваться
-                a.register(href="/registration").
+                a.register(href="./registration.pug").
                     Нет аккаунта?
