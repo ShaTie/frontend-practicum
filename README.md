@@ -15,3 +15,4 @@ npm i
 npm run build
 # Start
 npm run start
+```
