@@ -1,0 +1,15 @@
+mixin error(code, message)
+    head
+        link(rel="stylesheet", href="/src/styles/style.scss")
+
+    div.error-root
+        div.error-root-content
+            div.error-content
+                p.error-code= code
+                p.error-text= message
+            a.error-back-to-chats(href="messenger.pug").
+                Назад к чатам
+
+doctype html
+
+html(lang="en")

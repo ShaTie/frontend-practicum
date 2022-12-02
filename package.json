@@ -1,0 +1,26 @@
+{
+  "engine": 18,
+  "name": "frontend-practicum",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "parcel src/*.pug",
+    "build": "parcel build src/*.pug",
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "Danil Bezborodov",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.8.0",
+    "@parcel/transformer-sass": "^2.8.0",
+    "cssnano": "^4.1.11",
+    "express": "^4.18.2",
+    "parcel": "^2.8.0",
+    "parcel-plugin-handlebars": "^0.4.4",
+    "pug": "^3.0.2"
+  },
+  "dependencies": {
+    "clear.css": "^1.0.0"
+  }
+}
