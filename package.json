@@ -1,8 +1,10 @@
 {
-  "node": ">=12",
-  "npm": "~8.0.0",
+  "engines" : {
+    "node": ">=12",
+    "npm": "~8.0.0"
+  },
   "name": "frontend-practicum",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "",
   "scripts": {
     "dev": "parcel src/*.pug",
