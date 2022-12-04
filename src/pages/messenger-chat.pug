@@ -1,3 +1,8 @@
+include ../includes/opponent-message
+include ../includes/user-message
+
+- mock_message= "Привет! Смотри, тут всплыл интересный кусок лунной космической истории — НАСА в какой-то момент попросила Хассельблад адаптировать модель SWC для полетов на Луну. Сейчас мы все знаем что астронавты летали с моделью 500 EL — и к слову говоря, все тушки этих камер все еще находятся на поверхности Луны, так как астронавты с собой забрали только кассеты с пленкой."
+
 doctype html
 
 html(lang="ru")
@@ -25,8 +30,8 @@ html(lang="ru")
 
             ul.messenger-main-content-chat-content
                 each _ in Array(5)
-                    include ../includes/opponent-message
-                    include ../includes/user-message
+                    +opponent-message(mock_message, "12:02")
+                +user-message("Good!", "12:03")
 
             div.messenger-main-content-chat-input
 
