@@ -5,8 +5,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "parcel src/*.pug",
-    "build": "parcel build src/*.pug",
+    "dev": "parcel src/**/*.pug",
+    "build": "parcel build src/**/*.pug",
     "start": "node src/index.js"
   },
   "keywords": [],
