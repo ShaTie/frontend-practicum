@@ -1,5 +1,6 @@
 {
   "engine": 18,
+  "node" : ">=12",
   "name": "frontend-practicum",
   "version": "1.0.0",
   "description": "",
