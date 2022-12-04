@@ -1,0 +1,23 @@
+mixin navigation-link(name, link)
+    li.navigation-link
+        a.navigation-link-name(href=link)= name
+
+doctype html
+
+html(lang="ru")
+
+    head
+        link(rel="stylesheet", href="/src/styles/style.scss")
+        meta(name="viewport', content='width=device-width, initial-scale=0.5")
+
+    main.navigation-root
+        ul.navigation-links
+            +navigation-link("Регистрация", "/src/pages/registration.pug")
+            +navigation-link("Вход", "/src/pages/auth.pug")
+            +navigation-link("Главная", "/src/pages/messenger.pug")
+            +navigation-link("Главная, чат открыт", "/src/pages/messenger-chat.pug")
+            +navigation-link("Профиль, чат открыт", "/src/pages/user-profile.pug")
+            +navigation-link("User Action", "/src/pages/user-action.pug")
+            +navigation-link("File Picker", "/src/pages/file-picker.pug")
+            +navigation-link("Error 404", "/src/pages/404.pug")
+            +navigation-link("Error 500", "/src/pages/500.pug")

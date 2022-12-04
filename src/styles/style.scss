@@ -784,3 +784,34 @@ $main-ui-buttons-red: #FF0000;
     margin-top: 70px;
   }
 }
+
+.navigation-root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .navigation-links{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+
+    background-color: $main-ui-white;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.14);
+    border-radius: 12px;
+
+    .navigation-link{
+      cursor: pointer;
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      border-bottom: solid 1px $main-ui-border-gray;
+
+      .navigation-link-name{
+        color: #3369f3;
+        text-decoration: none;
+      }
+    }
+
+  }
+}
