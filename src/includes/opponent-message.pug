@@ -1,10 +1,6 @@
-head
-    link(rel="stylesheet", href="/src/styles/style.scss")
+mixin opponent-message(message_text, message_time)
 
-li.opponent-message
-        p.opponent-message-text.
-            Привет! Смотри, тут всплыл интересный кусок лунной космической истории — НАСА в какой-то момент попросила Хассельблад адаптировать модель SWC для полетов на Луну. Сейчас мы все знаем что астронавты летали с моделью 500 EL — и к слову говоря, все тушки этих камер все еще находятся на поверхности Луны, так как астронавты с собой забрали только кассеты с пленкой.
+    li.opponent-message
 
-            Хассельблад в итоге адаптировал SWC для космоса, но что-то пошло не так и на ракету они так никогда и не попали. Всего их было произведено 25 штук, одну из них недавно продали на аукционе за 45000 евро.
-        p.opponent-message-time.
-            12:00
+        p.opponent-message-text= message_text
+        p.opponent-message-time= message_time

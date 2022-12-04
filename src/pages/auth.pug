@@ -1,9 +1,12 @@
 doctype html
-html(lang="en")
-    head
-        link(rel="stylesheet", href="styles/style.scss")
 
-    div.auth_content
+html(lang="ru")
+
+    head
+        link(rel="stylesheet", href="/src/styles/style.scss")
+        meta(name="viewport', content='width=device-width, initial-scale=0.5")
+
+    main.auth_content
         form.login_form(role='form' method='POST' action='https://www.google.ru/')
 
             div.title
@@ -11,10 +14,10 @@ html(lang="en")
                     Вход
 
             div.inputs
-                p.
+                label.
                     Логин
                 input.login#login.form-control(type='text', name='login', required)
-                p.
+                label.
                     Пароль
                 input.pass#password.form-control(type='password', name='password', required)
 

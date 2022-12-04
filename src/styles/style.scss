@@ -1,5 +1,16 @@
 @import "clear";
 
+$main-ui-blue: #3369F3;
+$main-ui-black: #1E1E1E;
+$main-ui-white: #FFFFFF;
+$main-ui-gray: #999999;
+$main-ui-background-white: #FBFBFB;
+$main-ui-border-gray: #EAEAEA;
+$main-ui-user-message-blue-sky: #E4EDFD;
+$main-ui-opponent-message-gray: #F8F8F8;
+$main-ui-input-background: #EFEFEF;
+$main-ui-buttons-red: #FF0000;
+
 .auth_content {
   min-height: 100vh;
   display: flex;
@@ -21,7 +32,7 @@
       margin-top: 10%;
       font-size: 24px;
       line-height: 24px;
-      color: #1E1E1E;
+      color: $main-ui-black;
     }
 
     .inputs {
@@ -29,7 +40,7 @@
       min-width: 100%;
       font-size: 10px;
       line-height: 10px;
-      color: #999999;
+      color: $main-ui-gray;
 
       input {
         font-size: 16px;
@@ -37,7 +48,7 @@
         border: none;
         width: 100%;
         outline: none;
-        border-bottom: 1.5px solid #3369F3;
+        border-bottom: 1.5px solid $main-ui-blue;
       }
     }
 
@@ -53,18 +64,18 @@
         justify-content: center;
         align-items: center;
         min-width: 100%;
-        background: #3369F3;
+        background: $main-ui-blue;
         border-radius: 8px;
         border: none;
         font-size: 13px;
         line-height: 13px;
-        color: #FFFFFF;
+        color: $main-ui-white;
       }
 
       .register {
         margin-top: 10px;
         font-size: 11px;
-        color: #3369F3;
+        color: $main-ui-blue;
       }
     }
   }
@@ -94,7 +105,7 @@
       margin-top: 10%;
       font-size: 24px;
       line-height: 24px;
-      color: #1E1E1E;
+      color: $main-ui-black;
     }
 
     .inputs {
@@ -102,7 +113,7 @@
       min-width: 100%;
       font-size: 10px;
       line-height: 10px;
-      color: #999999;
+      color: $main-ui-gray;
 
       input {
         font-size: 16px;
@@ -110,7 +121,7 @@
         border: none;
         width: 100%;
         outline: none;
-        border-bottom: 1.5px solid #3369F3;
+        border-bottom: 1.5px solid $main-ui-blue;
       }
     }
 
@@ -126,18 +137,18 @@
         justify-content: center;
         align-items: center;
         min-width: 100%;
-        background: #3369F3;
+        background: $main-ui-blue;
         border-radius: 8px;
         border: none;
         font-size: 13px;
         line-height: 13px;
-        color: #FFFFFF;
+        color: $main-ui-white;
       }
 
       .auth {
         margin-top: 10px;
         font-size: 11px;
-        color: #3369F3;
+        color: $main-ui-blue;
       }
     }
   }
@@ -158,8 +169,8 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    background: #FBFBFB;
-    border-right: 1px solid #EAEAEA;
+    background: $main-ui-background-white;
+    border-right: 1px solid $main-ui-border-gray;
 
     .messages-bar-header {
       height: 100px;
@@ -183,7 +194,7 @@
           font-size: 12px;
           line-height: 12px;
           text-align: right;
-          color: #999999;
+          color: $main-ui-gray;
           text-decoration: none;
         }
       }
@@ -196,7 +207,7 @@
 
         input {
           width: 90%;
-          background: #EFEFEF;
+          background: $main-ui-input-background;
           border-radius: 5px;
           padding: 4px 14px;
           font-size: 12px;
@@ -207,7 +218,7 @@
           text-align: center;
           font-size: 12px;
           line-height: 12px;
-          color: #999999;
+          color: $main-ui-gray;
         }
       }
     }
@@ -225,7 +236,7 @@
 
       .line-between-chats {
         width: 90%;
-        border-top: solid 1px #EAEAEA;
+        border-top: solid 1px $main-ui-border-gray;
       }
 
       .messages-bar-chat {
@@ -260,14 +271,14 @@
             font-weight: 600;
             font-size: 13px;
             line-height: 13px;
-            color: #1E1E1E;
+            color: $main-ui-black;
           }
 
           .messages-bar-chat-message {
             min-height: 32px;
             line-height: 15px;
             font-size: 12px;
-            color: #999999;
+            color: $main-ui-gray;
             overflow: hidden;
             text-overflow: ellipsis;
             display: -moz-box;
@@ -289,7 +300,7 @@
             font-size: 9px;
             line-height: 13px;
             text-align: right;
-            color: #999999;
+            color: $main-ui-gray;
           }
 
           .messages-bar-chat-notifications-area {
@@ -304,13 +315,13 @@
               width: 20px;
               height: 20px;
               position: relative; /* If you want text inside of it */
-              background: #3369F3;
+              background: $main-ui-blue;
 
               .messages-bar-chat-notification-count {
                 font-size: 11px;
                 line-height: 12px;
                 text-align: center;
-                color: #FFFFFF;
+                color: $main-ui-white;
               }
             }
           }
@@ -319,7 +330,7 @@
     }
 
     .messages-bar-chat:hover {
-      background: #E4EDFD;
+      background: $main-ui-user-message-blue-sky;
     }
   }
 
@@ -335,7 +346,7 @@
     .messenger-main-content-select-chat-message {
       font-size: 12px;
       line-height: 12px;
-      color: #999999;
+      color: $main-ui-gray;
     }
   }
 
@@ -374,7 +385,7 @@
           font-weight: 600;
           font-size: 13px;
           line-height: 13px;
-          color: #1E1E1E;
+          color: $main-ui-black;
         }
       }
 
@@ -393,14 +404,14 @@
       flex-direction: column;
       height: 100%;
       padding: 0 20px;
-      border-top: solid 1px #EAEAEA;
-      border-bottom: solid 1px #EAEAEA;
+      border-top: solid 1px $main-ui-border-gray;
+      border-bottom: solid 1px $main-ui-border-gray;
       overflow: auto;
       position: sticky;
 
       .opponent-message {
         position: relative;
-        background: #F8F8F8;
+        background: $main-ui-opponent-message-gray;
         margin: 10px 0;
         padding: 11px;
         max-width: 40%;
@@ -409,7 +420,7 @@
         .opponent-message-text {
           font-size: 16px;
           line-height: 125%;
-          color: #1E1E1E;
+          color: $main-ui-black;
         }
 
         .opponent-message-time {
@@ -418,14 +429,14 @@
           bottom: 11px;
           font-size: 9px;
           line-height: 9px;
-          color: #999999;
+          color: $main-ui-gray;
         }
       }
 
       .user-message {
         align-self: flex-end;
         position: relative;
-        background: #E4EDFD;
+        background: $main-ui-user-message-blue-sky;
         margin: 10px 0;
         padding: 11px;
         max-width: 40%;
@@ -434,7 +445,7 @@
         .user-message-text {
           font-size: 16px;
           line-height: 125%;
-          color: #1E1E1E;
+          color: $main-ui-black;
           margin-bottom: 12px;
         }
 
@@ -449,7 +460,7 @@
 
             font-size: 9px;
             line-height: 9px;
-            color: #3369F3;
+            color: $main-ui-blue;
           }
         }
       }
@@ -476,12 +487,12 @@
 
         .messenger-main-content-chat-input-text {
           width: 100%;
-          background: #EFEFEF;
+          background: $main-ui-input-background;
           border-radius: 30px;
           padding: 10px 20px;
           font-size: 12px;
           line-height: 14px;
-          color: #999999;
+          color: $main-ui-gray;
           overflow: hidden;
           resize: none;
           grid-area: 1 / 1 / 2 / 2;
@@ -515,9 +526,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #FBFBFB;
+    background: $main-ui-background-white;
     width: 64px;
-    border-right: solid 1px #EAEAEA;
+    border-right: solid 1px $main-ui-border-gray;
 
   }
 
@@ -563,7 +574,7 @@
             font-size: 13px;
             line-height: 14px;
             text-align: center;
-            color: #FFFFFF;
+            color: $main-ui-white;
             opacity: 0;
             //transition: opacity ease-in .2s;
           }
@@ -573,7 +584,7 @@
           font-weight: 600;
           font-size: 16px;
           line-height: 16px;
-          color: #1E1E1E;
+          color: $main-ui-black;
         }
       }
 
@@ -584,19 +595,19 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
-          border-bottom: solid 1px #EAEAEA;
+          border-bottom: solid 1px $main-ui-border-gray;
 
           .user-info-field-key {
             font-size: 13px;
             line-height: 13px;
-            color: #1E1E1E;
+            color: $main-ui-black;
           }
 
           .user-info-field-value {
             font-size: 13px;
             line-height: 13px;
             text-align: right;
-            color: #999999;
+            color: $main-ui-gray;
           }
         }
 
@@ -611,8 +622,8 @@
         .user-profile-change-buttons-field {
           font-size: 13px;
           line-height: 13px;
-          color: #3369F3;
-          border-bottom: solid 1px #EAEAEA;
+          color: $main-ui-blue;
+          border-bottom: solid 1px $main-ui-border-gray;
 
           a {
             cursor: pointer;
@@ -625,7 +636,7 @@
         }
 
         .user-profile-change-buttons-field:last-child {
-          color: #FF0000;
+          color: $main-ui-buttons-red;
           border: none;
 
         }
@@ -649,7 +660,7 @@
   .file-picker{
     width: 340px;
     height: 260px;
-    background-color: #FFFFFF;
+    background-color: $main-ui-white;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.14);
     border-radius: 12px;
     z-index: 110;
@@ -661,7 +672,7 @@
     .file-picker-title{
       font-size: 15px;
       line-height: 20px;
-      color: #1E1E1E;
+      color: $main-ui-black;
     }
 
     .file-picker-pick{
@@ -673,17 +684,17 @@
       display: block;
       margin-block-start: 1em;
       margin-block-end: 1em;
-      color: #3369F3;
+      color: $main-ui-blue;
     }
 
     .file-picker-pick-submit{
       cursor: pointer;
       width: 280px;
       height: 40px;
-      background: #3369F3;
+      background: $main-ui-blue;
       border-radius: 8px;
       opacity: 1;
-      color: #FFFFFF;
+      color: $main-ui-white;
       font-size: 13px;
       line-height: 13px;
     }
@@ -692,7 +703,7 @@
   .user-action{
     width: 340px;
     height: 260px;
-    background-color: #FFFFFF;
+    background-color: $main-ui-white;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.14);
     border-radius: 12px;
     z-index: 110;
@@ -704,13 +715,13 @@
     .user-action-title{
         font-size: 15px;
         line-height: 20px;
-        color: #1E1E1E;
+        color: $main-ui-black;
       }
 
     .user-action-login-title{
       font-size: 9px;
       line-height: 9px;
-      color: #999999;
+      color: $main-ui-gray;
     }
 
     input{
@@ -719,17 +730,17 @@
       border: none;
       width: 100%;
       outline: none;
-      border-bottom: 1.5px solid #3369F3;
+      border-bottom: 1.5px solid $main-ui-blue;
     }
 
     .user-action-submit{
         cursor: pointer;
         width: 280px;
         height: 40px;
-        background: #3369F3;
+        background: $main-ui-blue;
         border-radius: 8px;
         opacity: 1;
-        color: #FFFFFF;
+        color: $main-ui-white;
         font-size: 13px;
         line-height: 13px;
       }
@@ -753,14 +764,14 @@
     .error-code{
       font-size: 40px;
       line-height: 40px;
-      color: #1E1E1E;
+      color: $main-ui-black;
       margin: 20px 0;
     }
 
     .error-text{
       font-size: 20px;
       line-height: 20px;
-      color: #1E1E1E;
+      color: $main-ui-black;
     }
   }
 
@@ -769,7 +780,38 @@
     cursor: pointer;
     font-size: 11px;
     line-height: 11px;
-    color: #3369F3;
+    color: $main-ui-blue;
     margin-top: 70px;
+  }
+}
+
+.navigation-root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .navigation-links{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+
+    background-color: $main-ui-white;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.14);
+    border-radius: 12px;
+
+    .navigation-link{
+      cursor: pointer;
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      border-bottom: solid 1px $main-ui-border-gray;
+
+      .navigation-link-name{
+        color: #3369f3;
+        text-decoration: none;
+      }
+    }
+
   }
 }

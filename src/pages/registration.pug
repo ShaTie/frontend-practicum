@@ -1,0 +1,45 @@
+doctype html
+
+html(lang="ru")
+
+    head
+        link(rel="stylesheet", href="/src/styles/style.scss")
+
+    main.registration_content
+        form.registration_form(role='form' method='POST' action='https://google.ru/')
+
+            div.title
+                p.title.
+                    Регистрация
+
+            div.inputs
+                label.
+                    Почта
+                input.registration#email.form-control(type='email', name='email', required)
+                label.
+                    Логин
+                input.registration#login.form-control(type='text', name='login', required)
+                label.
+                    Имя
+                input.registration#first_name.form-control(type='text', name='first_name', required)
+                label.
+                    Фамилия
+                input.registration#second_name.form-control(type='text', name='second_name', required)
+                label.
+                    Телефон
+                input.registration#phone.form-control(type='text', name='phone', required)
+                label.
+                    Пароль
+                input.registration#password.form-control(type='password', name='password', required)
+                label.
+                    Подтверждение пароля
+                input.registration#confirm_password.form-control(type='password', name='confirm_password', required)
+
+            div.buttons
+
+                button.authorize(type="submit")
+                    p.
+                        Авторизоваться
+
+                a.auth(href="./auth.pug").
+                    Есть аккаунт?

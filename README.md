@@ -15,7 +15,7 @@ git clone https://github.com/ShaTie/frontend-practicum.git
 # Go to project directory
 cd frontend-practicum
 # Install dependencies
-npm i
+npm ci
 # Build
 npm run build
 # Start
