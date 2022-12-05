@@ -1,0 +1,20 @@
+include chat.pug
+
+head
+    link(rel="stylesheet", href="/src/styles/style.scss")
+
+nav.messages-bar
+
+    div.messages-bar-header
+
+        div.messages-bar-profile-zone
+            div.messages-bar-header-profile
+            a.messages-bar-header-title(href="/src/pages/user-profile.pug").
+                Профиль >
+
+        div.messages-bar-header-search
+            input.messages-bar-header-search-input(placeholder="Поиск")
+
+    ul.messages-bar-content
+        each _ in Array(50)
+            +messages-bar-chat("/static/avatar.jpg", "Vitaliy Barukov", "Have a nice day", "11:02", "2")

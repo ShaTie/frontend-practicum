@@ -1,0 +1,29 @@
+doctype html
+
+html(lang="ru")
+
+    head
+        link(rel="stylesheet", href="/src/styles/style.scss")
+        meta(name="viewport', content='width=device-width, initial-scale=0.5")
+
+    main.auth_content
+        form.login_form(role='form' method='POST' action='https://www.google.ru/')
+
+            div.title
+                p.title.
+                    Вход
+
+            div.inputs
+                label.
+                    Логин
+                input.login#login.form-control(type='text', name='login', required)
+                label.
+                    Пароль
+                input.pass#password.form-control(type='password', name='password', required)
+
+            div.buttons
+                button.authorize(type="submit")
+                    p.
+                        Авторизоваться
+                a.register(href="./registration.pug").
+                    Нет аккаунта?

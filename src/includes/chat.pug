@@ -1,0 +1,20 @@
+mixin messages-bar-chat(avatar, full_name, message, message_time, notification_count)
+
+    li.messages-bar-chat
+
+        div.messages-bar-chat-avatar
+            img(src=avatar alt='avatar')
+
+        div.messages-bar-chat-content
+
+            p.messages-bar-chat-name= full_name
+            p.messages-bar-chat-message= message
+
+        div.messages-bar-chat-info
+
+            div.messages-bar-chat-time
+                p.messages-bar-chat-time= message_time
+
+            div.messages-bar-chat-notifications-area
+                div.messages-bar-chat-notification
+                    p.messages-bar-chat-notification-count= notification_count

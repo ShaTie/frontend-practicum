@@ -1,0 +1,10 @@
+mixin user-message(message_text, message_time)
+
+    li.user-message
+
+        p.user-message-text= message_text
+
+        div.user-message-time-and-mark
+
+            img(src='/static/icons/message-check-mark.svg' alt='user-message-mark-icon')
+            p.user-message-time= message_time

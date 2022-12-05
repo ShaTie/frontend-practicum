@@ -1,0 +1,46 @@
+mixin user-info-field(key, value)
+    li.user-info-field
+        p.user-info-field-key= key
+        p.user-info-field-value= value
+
+mixin user-profile-change-buttons(name)
+    li.user-profile-change-buttons-field
+        a.user-profile-change-buttons-field-name= name
+
+head
+    link(rel="stylesheet", href="/src/styles/style.scss")
+
+main.user-profile_content
+
+    div.user-profile-back
+        img(src='/static/icons/back_arrow_pointer.svg' alt='back_arrow_pointer-icon')
+
+    div.user-profile
+
+        div.user-profile-window
+
+            div.user-profile-info
+
+                div.user-profile-avatar
+
+                    a.user-profile-change-avatar
+                        | Поменять
+                        br
+                        | аватар
+
+                p.user-profile-info-name.
+                    Иван
+
+            ul.user-profile-main-info
+                +user-info-field("Почта", "pochta@yandex.ru")
+                +user-info-field("Логин", "ivanivanov")
+                +user-info-field("Имя", "Иван")
+                +user-info-field("Фамилия", "Иванов")
+                +user-info-field("Имя в чате", "Иван")
+                +user-info-field("Телефон", "+7 (909) 967 30 30")
+
+
+            ul.user-profile-change-buttons
+                +user-profile-change-buttons("Изменить данные")
+                +user-profile-change-buttons("Изменить пароль")
+                +user-profile-change-buttons("Выйти")

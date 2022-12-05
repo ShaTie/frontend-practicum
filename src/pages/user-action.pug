@@ -1,0 +1,18 @@
+head
+    link(rel="stylesheet", href="/src/styles/style.scss")
+    meta(name="viewport', content='width=device-width, initial-scale=0.5")
+
+main.modal-root
+
+    form.user-action(role='form' method='POST' action='https://www.google.ru/')
+
+        p.user-action-title.
+            Добавить пользователя
+
+        div.inputs
+            p.user-action-login-title.
+                Логин
+            input.login#login.form-control(type='text', name='login', required)
+
+        button.user-action-submit.
+            Добавить
